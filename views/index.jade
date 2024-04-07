@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  button.btn.btn-primary(src="#", style='margin-top:50px;') Назад
+  h1 Загрузка файла на сервер
+  hr
+  input(type='file',style='display: none', name='uploadFiles',id='uploadFiles',multiple)
+  div(style='margin-bottom:15px')
+    button.btn.btn-primary(id='addFilesButton') Добавить файл
+    button.btn.btn-primary(id='uploadAllFilesButton', style='margin-left:5px') Загрузить все
+  div.progress
+    div#progress.progress-bar(role='progressbar', style='width: 0%')
+  table#files.table
+
+
+block otherScripts
+  script(src='/js/image.upload.js')

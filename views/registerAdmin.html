@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public1/css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>DopMPT</title>
+</head>
+<body>
+    <header class="header-outer">
+        <div class="header-inner responsive-wrapper">
+            <div class="header-logo">
+                <img src="/public1/images/logo.png" alt="DopMPT"/>
+            </div>
+            <nav class="header-navigation">
+                <a href="/views/authorization.html">Войти</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="aside-outer">
+            <div class="aside-inner">
+                <aside class="aside-left">
+                    <p>
+                    <a href="../views/allusers.html">Пользователи</a>
+                    <a href="#"><span>Все темы</span></a>
+                    <!-- <a><span>Дисциплины</span></a>
+                    <a><span>Вопросы</span></a>
+                    <a><span>Темы для обсуждения</span></a> -->
+                    </p>
+                </aside>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left-section" style="margin-left: 0px; margin-top: 0px;">
+              <h1 style="margin-left: 10px;">Регистрация сотрудников в системе
+              </h1>
+              <form id="userForm" onsubmit="submitForm(event)">
+                <div class="input-section" style="margin-left: 30px;margin-top: 20px;">
+                  <label for="Surname_admin" style="font-size: 26px; margin-left: 10px;">Фамилия:</label>
+                  <input type="text" id="Surname_admin" name="Surname_admin" required maxlength="30">
+                </div>
+                <div class="input-section" style="margin-left: 30px;margin-top: 20px;">
+                  <label for="Name_admin" style="font-size: 26px; margin-left: 10px;">Имя:</label>
+                  <input type="text" id="Name_admin" name="Name_admin" required maxlength="30">
+                </div>
+                <div class="input-section" style="margin-left: 30px; margin-top: 20px;">
+                  <label for="Middle_admin" style="font-size: 26px; margin-left: 10px;">Отчество:</label>
+                  <input type="text" id="Middle_admin" name="Middle_admin" maxlength="30">
+                </div>
+                <div class="input-section" style="margin-left: 30px;margin-top: 20px;">
+                  <label for="Password_admin" style="font-size: 26px; margin-left: 10px;">Пароль:</label>
+                  <input type="password" style="font-size: 26px;" id="Password_admin" name="Password_admin" required maxlength="30">
+                  <button id="showPasswordButton" style="width: 100px;" class="button" onclick="togglePasswordVisibility('password')">Показать пароль</button>
+                </div>
+         
+                
+                <div class="input-section" style="margin-left: 30px;margin-top: 20px;">
+                  <label for="Email_admin" style="font-size: 26px; margin-left: 10px; margin-top: 20px;">Email:</label>
+                  <input type="email" style="font-size: 26px;" id="Email_admin" name="Email_admin" required maxlength="50">
+                </div>
+                <div class="input-section" style="margin-left: 30px;margin-top: 20px;">
+                  <label for="Post_ID" style="font-size: 26px; margin-left: 10px;">Должность:</label>
+                  <select id="Post_ID" name="Post_ID" required style="font-size: 26px; margin-bottom: 50px; margin-top: 20px;">
+                    <option value="1">Администратор платформы</option>
+                    <option value="2">Администратор</option>
+                  </select>                
+                </div>
+                <button class="login-button" style="margin-left: 0px;" type="submit">Создать пользователя</button>
+              </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div style="margin-top: 20px;" class="admins">
+    <h1>Сотрудники в системе
+    </h1>
+    <label style="font-size: 25px;" for="userName">Поиск по ФИО пользователя:</label>
+  <input type="text" class="text" id="userName" placeholder="Введите ФИО пользователя">
+  
+    <div class="table-container" style=" width: 1000px; height: 500px; overflow-x: auto;">
+      <table id="userPostsTable">
+        <thead>
+          <tr>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Отчетство</th>
+            <th>Электронная почта</th>
+            <th>Пароль<br>пользователя</th>
+            <th>Должность</th>
+          </tr>
+        </thead>
+        <tbody style="overflow-x: auto;  width: 100px; height: 100px;" id="userPostsTableBody">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+  
+  <p style="color: #f3f5f9;">-</p>
+  <p style="color: #f3f5f9;">-</p>
+  <p style="color: #f3f5f9;">-</p>
+  <p style="color: #f3f5f9;">-</p>
+  <p style="color: #f3f5f9;">-</p>
+  <p style="color: #f3f5f9;">-</p>
+    </div>
+    </main>
+    <footer class="footer-outer">
+        <div class="footer-inner responsive-wrapper">
+            <h1>Разработано DopMPT © 2023 - Все права защищены</h1>
+        </div>
+    </footer>
+    <script src="/src/registerAdmin.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public1/css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>DopMPT</title>
+</head>
+<body>
+    <header class="header-outer">
+        <div class="header-inner responsive-wrapper">
+            <div class="header-logo">
+                <img src="/public1/images/logo.png" alt="DopMPT"/>
+            </div>
+            <nav class="header-navigation">
+                <form>
+                    <input placeholder="Поиск">
+                    <button>Поиск</button>
+                </form>
+                <a href="/views/authorization.html">Войти</a>
+                <a href="#">Профиль</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="aside-outer">
+            <div class="aside-inner">
+                <aside class="aside-left">
+                    <p>
+                    <a href="../views/allusers.html">Пользователи</a>
+                    <a href="#"><span>Все темы</span></a>
+                    <a href="#"><span>Резервная копия</span></a>
+                    <a href="#"><span>Статистика</span></a>
+                    <!-- <a><span>Дисциплины</span></a>
+                    <a><span>Вопросы</span></a>
+                    <a><span>Темы для обсуждения</span></a> -->
+                    </p>
+                </aside>
+            </div>
+        </div>
+        <div class="center">
+            <label style="font-size:20px;">Сортировать: </label>
+            <button class="button" style="text-align: center; font-size: 20px;" id="sortAscButton">А↓</button>
+            <button class="button" style="text-align: center; font-size: 20px;" id="sortDescButton">Я↑</button> 
+            <div class="filter">
+                <label for="rating">По категории темы:</label>
+                <select id="rating">
+                    <option value="1">Все</option>
+                    <option value="2">Дисциплина</option>
+                    <option value="3">Вопрос</option>
+                    <option value="4">Тема для обсуждения</option>
+                </select>
+            </div>
+                <button type="button" id="addButton" class="addButton" onclick="window.location.href='../views/addtheme.html'">Добавить новую тему</button>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="theme-info">
+                    </div>
+                    <div class="vertical-cards">
+                    </div>
+                </div>
+                <button class="details-button">Подробнее</button>
+                <!-- <button class="delete-button">🗑️</button> -->
+            </div>
+            <p style="color: #f3f5f9;">-</p>
+            <div style="align-content: center;" class="pagination">
+            </div>
+        </div>
+    </main>
+    <footer class="footer-outer">
+        <div class="footer-inner responsive-wrapper">
+            <h1>Разработано DopMPT © 2023 - Все права защищены</h1>
+        </div>
+    </footer>
+    <script src="/src/themes_view.js"></script>
+</body>
+</html>

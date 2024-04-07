@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public1/css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>DopMPT</title>
+</head>
+<body>
+    <header class="header-outer">
+        <div class="header-inner responsive-wrapper">
+            <div class="header-logo">
+                <img src="/public1/images/logo.png" alt="DopMPT"/>
+            </div>
+            <nav class="header-navigation">
+                <a href="/views/authorization.html">Войти</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="authorization">
+            <h1>Авторизация</h1>
+            <form id="loginForm">
+                <h3>Войдите здесь</h3>
+                <div class="pole" style="position: relative;">
+                    <label for="Email_admin">Логин</label>
+                    <input type="text" placeholder="Введите Email" id="Email_admin" name="Email_admin">
+                    <span class="error-balloon" id="emailError">Введите корректный логин</span>
+                </div>
+                <div class="pole" style="position: relative;">
+                    <label for="Password_admin">Пароль</label>
+                    <input type="password" placeholder="Пароль" id="Password_admin" name="Password_admin">
+                    <span class="error-balloon" id="passwordError">Пароль не верен</span>
+                </div>
+                <button type="submit" class="login-button" id="loginButton">Войти</button>
+            </form>
+        </div>
+    </div>
+    </main>
+    <footer class="footer-outer">
+        <div class="footer-inner responsive-wrapper">
+            <h1>Разработано DopMPT © 2023 - Все права защищены</h1>
+        </div>
+    </footer>
+    <script src="/src/userController.js"></script>
+</body>
+</html>

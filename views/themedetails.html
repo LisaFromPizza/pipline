@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public1/css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>DopMPT</title>
+</head>
+<body>
+    <header class="header-outer">
+        <div class="header-inner responsive-wrapper">
+            <div class="header-logo">
+                <img src="/public1/images/logo.png" alt="DopMPT"/>
+            </div>
+            <nav class="header-navigation">
+                <form>
+                    <input placeholder="Поиск">
+                    <button>Поиск</button>
+                </form>
+                <a href="/views/authorization.html">Войти</a>
+                <a href="#">Профиль</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="aside-outer">
+            <div class="aside-inner">
+                <aside class="aside-left">
+                    <p>
+                    <a href="../views/allusers.html">Пользователи</a>
+                    <a href="#"><span>Все темы</span></a>
+                    <a href="#"><span>Резервная копия</span></a>
+                    <a href="#"><span>Статистика</span></a>
+                    <!-- <a><span>Дисциплины</span></a>
+                    <a><span>Вопросы</span></a>
+                    <a><span>Темы для обсуждения</span></a> -->
+                    </p>
+                </aside>
+            </div>
+        </div>
+        <div class="centeradd">
+            <label id="themeTitle" style="font-size:30px;"></label>
+            
+                <div class="left-section" style="margin-left: 80px; margin-top: 30px;">
+                    <label style="font-size: 20px;" for="themeType">Тип темы:</label>
+                    <select style="font-size: 20px;" id="themeType" name="themeType">
+                      <!-- Опции для комбобокса Patient  disabled-->
+                    </select>     
+                    <p></p>
+                    <label style="font-size: 20px;" for="desc">Описание:</label>
+                    <p></p>
+                    <textarea id="desc" name="desc" rows="7" cols="50"></textarea>
+                    <p></p>
+                    <label style="font-size: 20px;" for="text">Текст:</label>
+                    <p></p>
+                    <textarea id="text" name="text" rows="7" cols="50"></textarea>
+                    <p></p>
+                    <!-- <label for="notes">Ф:</label>
+                    <textarea style="border-color: #3167D9;" id="notes" name="notes" rows="4" cols="50"></textarea> -->
+                    <label style="font-size: 20px;" for="files">Файлы:</label>
+                    <a href="/files/1.pdf">sdfsdfdf</a>
+                    <div сlass="conteiner">
+                    <select style="font-size: 20px;" id="files" name="files">
+                      <!-- Опции для комбобокса Diagnosis_ID -->
+                    </select>
+                    <label style="font-size: 20px;" for="searchFiles">Поиск по файлам:</label>
+                    <input style="font-size: 20px;" type="text" id="searchFiles" placeholder="Поиск по файлам">
+                  </div>
+                  <div>
+                    <button id="addButton" class="login-button" style="margin-left: 0px;">Добавить</button>   
+                    <button class="button" id="refreshButton">&#10227;</button>
+                  </div>
+                  <div>
+                  <h1  >Загрузка данных из Excel</h1>
+                  <input  type="file"  id="excelFile" accept=".xlsx, .xls">
+                  <button style="width: 150px;" class="button" id="uploadButton">Загрузить</button>
+                  <h1 >Загрузка данных из SQL</h1>
+                  <input style="border-color: #3167D9;"  type="file" id="sqlFile" accept=".sql">
+                  <button style="width: 150px;" class="button" id="uploadButtonSQL">Загрузить</button>
+                  </div>
+                </div>
+        </div>
+    </main>
+    <footer class="footer-outer">
+        <div class="footer-inner responsive-wrapper">
+            <h1>Разработано DopMPT © 2023 - Все права защищены</h1>
+        </div>
+    </footer>
+    <script src="/src/theme_details.js"></script>
+</body>
+</html>

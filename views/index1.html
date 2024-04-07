@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DopMPT | </title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' >
+    <meta name='viewport' content='width=device-width, initial-scale=1' >
+    <meta name='description' content="" >
+    <meta name='author' content="xfakehopex">
+    <link rel='stylesheet' href='/public/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='/public/css/main.css'>
+</head>
+<body>
+        <main>
+            <button class="btn btn-primary" src="#" style="margin-top:50px">Назад</button>
+                <h1>Загрузка файла на сервер</h1>
+                <hr/>
+                <input type="file" style="display: none" name="uploadFiles" id="uploadFiles" multiple="multiple"/>
+                <div style="margin-bottom:15px">
+                  <button class="btn btn-primary" id="addFilesButton">Add files</button>
+                  <button class="btn btn-primary" id="uploadAllFilesButton" style="margin-left:5px">Upload All</button>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" id="progress" role="progressbar" style="width: 0%"></div>
+                </div>
+                <table class="table" id="files"></table>
+            <!-- div.progress
+              div#progress.progress-bar(role='progressbar', style='width: 0%')
+            table#files.table -->
+        </main>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script src='/public/js/bootstrap.min.js'></script>
+    <script type="text/javascript" src='/public/js/image.upload.js'></script>
+</body>
+</html>
