@@ -27,9 +27,21 @@
   "version": "1.0.0",
   "main": "app.js",
   "devDependencies": {
+    "@eslint/eslintrc": "^3.0.2",
+    "@eslint/js": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "globals": "^15.0.0",
     "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.4",
+    "typescript-eslint": "^7.5.0"
   },
   "scripts": {
     "dev": "nodemon app1.js",
